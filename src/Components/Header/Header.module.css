@@ -1,85 +1,176 @@
-.headerContainer {
-    background-color: #131921;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    color: white;
-    height: 60px; /* Adjust the height as needed */
-  }
+*{
+  padding: 0;
+  margin: 0;
+}
+.header__container {
+  background-color: #1a1a1a;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 70px;
+  color: white;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+
+
+
+  .logo__container img {
+  width: 80%;
+  padding-top: 5px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+/* Comment Code */
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* Comment Code */
+.delivery p {
+  font-size: 10px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+}
+
+/* Comment Code */
+search select,
+search input {
+  padding: 10px;
+  font-weight: bold;
+  outline: 1px solid #fff;
+}
+
+/* Comment Code */
+search select {
+  border: none;
+}
+
+.search input {
   
-  .logoContainer a img {
-    width: 100px; /* Adjust the size as needed */
-  }
-  
-  .deliveryLocation {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .deliveryLocation svg {
-    margin-right: 5px;
-  }
-  
-  .deliveryText span {
-    display: block;
-  }
-  
-  .searchBar {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .searchDropdown {
-    border: none;
-    margin-right: 5px;
-  }
-  
-  .searchBar input {
-    border: none;
-    padding: 8px;
-    width: 300px; /* Adjust the width as needed */
-  }
-  
-  .searchBar svg {
-    padding: 8px;
-    background-color: #febd69;
-    color: #131921;
-  }
-  
-  .accountAndOrders a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .cartContainer a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-    padding: 10px;
-  }
-  
-  .cartContainer svg {
-    font-size: 24px;
-  }
-  
-  .cartContainer span {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: #f08804;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-  }
-  
+  width: 100%;
+  border: 1px solid white;
+  margin-right: -2px; /* border: none; */
+}
+
+/* Comment Code */
+.search svg {
+  padding: 7px;
+  background: #1a1a1a;
+  color: #fefbd9;
+}
+
+/* Comment Code */
+.search svg:hover {
+  background-color: #d49644;
+}
+
+/* Comment Code */
+.search:focus-within {
+  border: 2px solid rgb(235, 161, 173);
+}
+/* Comment Code */
+
+.order__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  gap: 10px;
+}
+
+/* Comment Code */
+.order__container a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Comment Code */
+.order__container p {
+  font-size: 10px;
+}
+.language {
+  width: 100px;
+  display: flex;
+  padding: 10px;
+}
+
+/* Comment Code */
+.language select {
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+}
+
+/* Comment Code */
+.language img {
+  width: 40%;
+}
+
+
+
+
+
+.cart {
+  position: relative;
+}
+
+/* Comment Code */
+.cart span {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #1a1a1a;
+  left: 16px;
+  color: orange;
+}
+/* Comment Code */
+.order_container a:hover,
+.delivery:hover,
+.logo_container a:hover,
+
+.lower__container ul li:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.lower__container {
+  background-color: #232f3e;
+  color: white;
+}
+
+/* Comment Code */
+.lower__container ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+/* Comment Code */
+.lower__container ul li {
+  padding: 8px;
+}
+
+.lower__container ul li:first-child {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
