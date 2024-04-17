@@ -1,0 +1,85 @@
+.headerContainer {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    height: 60px; /* Adjust the height as needed */
+  }
+  
+  .logoContainer a img {
+    width: 100px; /* Adjust the size as needed */
+  }
+  
+  .deliveryLocation {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .deliveryLocation svg {
+    margin-right: 5px;
+  }
+  
+  .deliveryText span {
+    display: block;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .searchDropdown {
+    border: none;
+    margin-right: 5px;
+  }
+  
+  .searchBar input {
+    border: none;
+    padding: 8px;
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .searchBar svg {
+    padding: 8px;
+    background-color: #febd69;
+    color: #131921;
+  }
+  
+  .accountAndOrders a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .cartContainer a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .cartContainer svg {
+    font-size: 24px;
+  }
+  
+  .cartContainer span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #f08804;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
