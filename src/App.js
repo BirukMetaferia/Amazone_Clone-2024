@@ -1,6 +1,6 @@
 import Header from './Components/Header/Header';
-
-import LowerHeader from './Components/Header/LowerHeader';
+import Carousel from './Components/Carousel/Carousel';
+import Category from './Components/Category/Category';
 
 import './App.css';
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <Header/>
-    
+      <Carousel/>
+      <Category/>
     </>
   );
 }

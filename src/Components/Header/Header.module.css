@@ -174,3 +174,17 @@ search select {
   gap: 2px;
   align-items: center;
 }
+
+@media screen and (max-width: 576px) {
+  .header__container {
+    display: flex;
+    flex-direction: column !important;
+    height: auto;
+  }
+  .lower__container ul li:not(:first-child) {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+}
