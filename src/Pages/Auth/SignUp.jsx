@@ -5,7 +5,7 @@ function SignUp() {
   return (
     <Layout>
     <div>
-      cart
+      sign in
     </div>
     </Layout>
   );

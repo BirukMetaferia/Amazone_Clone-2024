@@ -37,7 +37,7 @@
 
 .category a {
   padding: 8px 16px;
-  background-color: #ffa41c; /* Amazon's button color, can adjust as needed */
+  
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -46,5 +46,5 @@
 }
 
 .category a:hover {
-  background-color: #0063cc; /* Darker on hover */
+  background-color: #dcba11; /* Darker on hover */
 }
