@@ -1,37 +1,50 @@
-.category {
-    height: 350px;
-    width: 350px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .category img {
-    width: 100%;
-    object-fit: contain;
-    max-height: 250px;
-    padding: 0px 10px;
-  }
-  
-  .category a {
-    text-decoration: none;
-    color: rgb(35, 35, 35);
-  }
-  .category h2,
-.category p {
-  padding: 5px;
-  margin-left: 15px;
+.category__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: -10%;
+  background-color: #f0f0f0; /* Light gray background */
 }
 
-.category p {
-  font-size: 12px;
-  font-weight: bold;
-  color: rgb(9, 132, 229);
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* White background for each category */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+  border-radius: 4px; /* Rounded corners */
+  overflow: hidden; /* Ensures no overflow */
+  transition: transform 0.2s ease-in-out; /* Smooth transform effect for hover */
 }
-.category__container {
-    position: relative;
-    margin-top: -10%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-  }
-  
+
+.category {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.category img {
+  width: 100%;
+  height: auto; /* Adjust height automatically */
+  object-fit: cover; /* Ensures the image covers the area well */
+}
+
+.category h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.category a {
+  padding: 8px 16px;
+  background-color: #ffa41c; /* Amazon's button color, can adjust as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space at bottom inside the category box */
+  font-weight: bold;
+}
+
+.category a:hover {
+  background-color: #0063cc; /* Darker on hover */
+}

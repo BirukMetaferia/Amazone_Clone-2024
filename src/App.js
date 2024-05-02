@@ -1,15 +1,12 @@
-import Header from './Components/Header/Header';
-import Carousel from './Components/Carousel/Carousel';
-import Category from './Components/Category/Category';
-
+import React from 'react';
+import Routing from './Router.jsx';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Header/>
-      <Carousel/>
-      <Category/>
+    
+    <Routing/>
     </>
   );
 }

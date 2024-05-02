@@ -18,7 +18,10 @@
   max-width: 250px;
 }
 
-
+.logo__container  a:hover{
+  border: 1px solid white;
+  border-radius: 3px;
+}
 
   .logo__container img {
   width: 80%;
@@ -97,10 +100,16 @@ search select {
   gap: 10px;
 }
 
+
 /* Comment Code */
 .order__container a {
   text-decoration: none;
+
   color: white;
+}
+.order__container a:hover{
+  border: 1px solid white;
+  border-radius: 3px;
 }
 
 /* Comment Code */
@@ -182,7 +191,7 @@ search select {
     height: auto;
   }
   .lower__container ul li:not(:first-child) {
-    display: none;
+    display: none !important;
   }
   .language {
     display: none;

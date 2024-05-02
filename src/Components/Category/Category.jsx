@@ -14,6 +14,7 @@ function Category() {
         <CategoryCard data={infos} />
       ))}
     </section>
+    
   );
 }
 

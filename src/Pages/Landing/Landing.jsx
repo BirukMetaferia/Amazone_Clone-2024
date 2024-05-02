@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../../Components/Layout/Layout';
-import Carousel from '../../Components/Carousel/CarouselEffect';
-import Category from '../../Components/Category/CategoryCard';
-import Product from '../../Components/Product/Product';
+import Carousel from '../../Components/Carousel/Carousel';
+import Category from '../../Components/Category/Category';
+
 // Comment Code
 
 function Landing() {
@@ -10,7 +10,6 @@ function Landing() {
     <Layout>
       <Carousel/>
       <Category/>
-      <Product/>
     </Layout>
   );
 }

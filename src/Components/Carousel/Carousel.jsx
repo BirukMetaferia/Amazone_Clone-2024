@@ -18,7 +18,7 @@ function CarouselEffect() {
           return <img key={index} src={imageItemLink} alt={`carousel-item-${index}`} />
         })}
       </ResponsiveCarousel>
-      <div className={styles.hero__img}></div> {/* Used 'styles' to reference class */}
+      <div className={styles.hero__img}></div> 
     </div>
   );
 }
