@@ -22,7 +22,7 @@ function ProductCard({ product, flex, renderDesc }) {
       </Link>
       <div>
         <h3>{title}</h3>
-        {renderDesc && <div style={{maxWidth:"750"}}>{description}</div>}
+        {renderDesc && <div style={{maxWidth:"700px"}}>{description}</div>}
         <div className={classes.rating}>
           {/* rating */}
           <Rating value={rating.rate} precision={8.1} />
