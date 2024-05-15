@@ -1,5 +1,6 @@
 .hero__img {
     position: relative;
+ 
   }
   
   .hero__img::before {
@@ -14,4 +15,4 @@
       rgba(255, 255, 255)
     );
   }
-  
+

@@ -46,5 +46,10 @@
 }
 
 .category a:hover {
-  background-color: #dcba11; /* Darker on hover */
+  background-color: #d2cfc0; /* Darker on hover */
 }
+.category p{
+  color: blue;
+}
+
+

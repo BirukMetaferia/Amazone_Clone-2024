@@ -7,7 +7,7 @@ import styles from './Carousel.module.css'; // Renamed to 'styles'
 // Comment Code
 function CarouselEffect() {
   return (
-    <div>
+    <div  className={styles.container}>
       <ResponsiveCarousel
         autoPlay={true}
         infiniteLoop={true}

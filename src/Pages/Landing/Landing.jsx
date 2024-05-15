@@ -7,14 +7,18 @@ import Product from '../../Components/Product/Product';
 // Comment Code
 
 function Landing() {
-  return (
-    <Layout>
-     
-      <Carousel/>
-      <Category/>
-      <Product/>
-    </Layout>
-  );
+  
+    
+  
+    return (
+      <Layout>
+        <Carousel />
+        <Category />
+        <Product />
+      </Layout>
+    );
+  
+  
 }
 
 export default Landing;

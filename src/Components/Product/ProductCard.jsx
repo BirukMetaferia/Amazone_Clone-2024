@@ -1,32 +1,42 @@
 import React from 'react';
-import Rating from '@mui/material/Rating';
+import { Link } from 'react-router-dom';
 import CurrencyFormat from '../CurrencyFormat/CurrencyFormat';
+import Rating from '@mui/material/Rating'; // Assuming Rating component exists
+
 import classes from './Product.module.css';
 
+// Comment Code
 function ProductCard({ product }) {
-  const { image, title, rating, price } = product;
+  // Check if product is null
+  if (!product) {
+    return null; // or a placeholder component/message
+  }
 
+  const { image, title, id, rating, price } = product;
+  
   return (
     <div className={classes.card_container}>
-      <a href="">
-        <img src={image} alt="" />
-      </a>
+      <Link to={`/products/${id}`}>
+        <img src={image} alt="" className={classes.img_container} />
+      </Link>
       <div>
         <h3>{title}</h3>
         <div className={classes.rating}>
-          <Rating value={rating.rate} precision={0.1} />
-          {/* Display rating count */}
-          <small>({rating.count})</small>
+          {/* rating */}
+          <Rating value={rating.rate} precision={8.1} />
+          {/* count */}
+          <small>{rating.count}</small>
         </div>
         <div>
-          {/* Display price using CurrencyFormat component */}
+          {/* price */}
           <CurrencyFormat amount={price} />
         </div>
-        <button className={classes.button}>Add to cart</button>
+        <button className={classes.button}>
+          add to cart
+        </button>
       </div>
     </div>
   );
 }
 
 export default ProductCard;
-
