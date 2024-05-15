@@ -69,3 +69,34 @@
     margin: 0;
   }
   
+/* Remove box shadow and adjust height for flexed layout */
+.product_flexed {
+  box-shadow: none;
+  height: 50vh; /* Set a specific height */
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.product_flexed h3 {
+  padding: 10px 0; /* Adjust padding */
+}
+
+.product_flexed .button {
+  display: block;
+  position: static;
+  width: 150px;
+  margin-right: 40px;
+}
+
+.product_flexed img {
+  width: 300px !important;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .product_flexed {
+    display: flex;
+    flex-direction: column;
+  }
+}

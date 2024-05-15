@@ -32,7 +32,10 @@ function ProductDetails() {
         <div>{error}</div>
       ) : (
         <div>
-          <ProductCard product={product} />
+          <ProductCard product={product} 
+          flex={true}
+          renderDesc={true}
+          />
         </div>
       )}
     </Layout>
