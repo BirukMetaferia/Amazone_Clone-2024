@@ -8,6 +8,7 @@
 }
 
 .category {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,19 +49,19 @@
 .category link:hover {
   background-color: #d2cfc0; /* Darker on hover */
 }
-.category p {
-  padding: 5px; /* Add padding around text elements */
-  margin-left: 15px; /* Add left margin to text elements */
-  margin-bottom: 10px;
+.category {
+  position: relative; /* Set parent container to relative positioning */
 }
 
-/* Styles for paragraph text within the category container */
 .category p {
-  font-size: 12px; /* Set font size */
-  font-weight: bold; /* Set font weight to bold */
-  color: rgb(9, 132, 209); /* Set text color */
-  position: absolute; /* Position the paragraph absolutely */
-  bottom: 5px; /* 5px from the bottom of the parent container */
-  left: 15px; /* 15px from the left of the parent container */
+  padding: 5px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+  position: absolute; /* Set p element to absolute positioning */
+  bottom: 10px; /* Move p element 10px above the parent container */
 }
+
 
