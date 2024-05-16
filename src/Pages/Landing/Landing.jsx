@@ -6,7 +6,7 @@ import Product from '../../Components/Product/Product';
 //import Footer from '../../Components/Footer/Footers';
 // Comment Code
 //import Footer from '../../Components/Footer/Footer';
-import Footer from '../../Components/Footer/Footer'; 
+//
 
 
 function Landing() {
