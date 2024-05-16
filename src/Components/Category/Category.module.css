@@ -25,7 +25,7 @@
 
 .category img {
   width: 100%;
-  height: auto; /* Adjust height automatically */
+  height: 80%; /* Adjust height automatically */
   object-fit: cover; /* Ensures the image covers the area well */
 }
 
@@ -35,7 +35,7 @@
   color: #333;
 }
 
-.category a {
+.category link {
   padding: 8px 16px;
   
   color: #fff;
@@ -45,11 +45,22 @@
   font-weight: bold;
 }
 
-.category a:hover {
+.category link:hover {
   background-color: #d2cfc0; /* Darker on hover */
 }
-.category p{
-  color: blue;
+.category p {
+  padding: 5px; /* Add padding around text elements */
+  margin-left: 15px; /* Add left margin to text elements */
+  margin-bottom: 10px;
 }
 
+/* Styles for paragraph text within the category container */
+.category p {
+  font-size: 12px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  color: rgb(9, 132, 209); /* Set text color */
+  position: absolute; /* Position the paragraph absolutely */
+  bottom: 5px; /* 5px from the bottom of the parent container */
+  left: 15px; /* 15px from the left of the parent container */
+}
 
