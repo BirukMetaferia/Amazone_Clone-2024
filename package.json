@@ -22,8 +22,7 @@
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
+  },  "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
