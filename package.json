@@ -1,5 +1,7 @@
-{ 
-  "name": "my-app",
+{  "homepage": "https://BirukMetaferia.github.io/Amazone_Clone-2024",
+
+   "name": "my-app",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
