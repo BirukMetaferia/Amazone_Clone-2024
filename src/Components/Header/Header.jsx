@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from '../DataProvider/DataProvider';
 
 const Header = () => {
-  const [{ basket }, dispatch] = useContext(DataContext);
+  const [{ basket }] = useContext(DataContext);
   const totalItem = basket?.reduce((amount, item) => item.amount + amount, 0);
 
   return (
