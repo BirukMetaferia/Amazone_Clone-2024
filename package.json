@@ -2,7 +2,7 @@
   "name": "amazone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://BirukMetaferia.github.io/Amazone_Clone-2024",
+  
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -25,6 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -38,6 +39,7 @@
       "react-app/jest"
     ]
   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -50,6 +52,7 @@
       "last 1 safari version"
     ]
   },
+ 
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
