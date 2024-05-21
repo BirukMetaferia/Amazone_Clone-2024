@@ -1,10 +1,7 @@
-import firebase from "firebase/compat/app";
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-import { getAuth } from "firebase/compat/auth";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC7ikfMEUK2aLcfPftJ60h7hYb7yW2u5rg",
   authDomain: "e-clone-3f992.firebaseapp.com",
@@ -15,6 +12,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = app.firestore();
+export const db = getFirestore(app);
