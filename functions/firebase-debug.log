@@ -1,0 +1,55 @@
+[debug] [2024-05-22T08:48:58.056Z] ----------------------------------------------------------------------
+[debug] [2024-05-22T08:48:58.060Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\biruk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-05-22T08:48:58.061Z] CLI Version:   13.9.0
+[debug] [2024-05-22T08:48:58.062Z] Platform:      win32
+[debug] [2024-05-22T08:48:58.062Z] Node Version:  v20.11.0
+[debug] [2024-05-22T08:48:58.062Z] Time:          Wed May 22 2024 14:48:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-05-22T08:48:58.062Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-22T08:48:58.155Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-22T08:48:58.155Z] > authorizing via signed-in user (birukm555@gmail.com)
+[debug] [2024-05-22T08:48:58.155Z] [iam] checking project e-clone-3f992 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-05-22T08:48:58.157Z] > refreshing access token with scopes: []
+[debug] [2024-05-22T08:48:58.159Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-22T08:48:58.159Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-22T08:48:59.094Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-22T08:48:59.095Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-22T08:48:59.499Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions [none]
+[debug] [2024-05-22T08:48:59.501Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions x-goog-quota-user=projects/e-clone-3f992
+[debug] [2024-05-22T08:48:59.502Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-05-22T08:49:01.343Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions 200
+[debug] [2024-05-22T08:49:01.343Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-05-22T08:49:01.345Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-05-22T08:49:01.345Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-05-22T08:49:03.476Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-05-22T08:49:03.477Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'e-clone-3f992'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-05-22T08:49:03.496Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992 [none]
+[debug] [2024-05-22T08:49:14.707Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2024-05-22T08:49:14.708Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992 (original: request to https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[debug] [2024-05-22T08:49:15.350Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/e-clone-3f992
+    at RetryOperation._fn (C:\Users\biruk\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project e-clone-3f992. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-05-22T08:50:53.364Z] ----------------------------------------------------------------------
+[debug] [2024-05-22T08:50:53.367Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\biruk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-05-22T08:50:53.367Z] CLI Version:   13.9.0
+[debug] [2024-05-22T08:50:53.368Z] Platform:      win32
+[debug] [2024-05-22T08:50:53.368Z] Node Version:  v20.11.0
+[debug] [2024-05-22T08:50:53.368Z] Time:          Wed May 22 2024 14:50:53 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-05-22T08:50:53.368Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-22T08:50:53.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-22T08:50:53.460Z] > authorizing via signed-in user (birukm555@gmail.com)
+[debug] [2024-05-22T08:50:53.460Z] [iam] checking project e-clone-3f992 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-05-22T08:50:53.463Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions [none]
+[debug] [2024-05-22T08:50:53.463Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions x-goog-quota-user=projects/e-clone-3f992
+[debug] [2024-05-22T08:50:53.464Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-05-22T08:50:55.312Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions 200
+[debug] [2024-05-22T08:50:55.312Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-3f992:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-05-22T08:50:55.313Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-05-22T08:50:55.314Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/e-clone-3f992/serviceAccounts/e-clone-3f992@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}

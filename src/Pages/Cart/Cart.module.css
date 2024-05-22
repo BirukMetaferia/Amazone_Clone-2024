@@ -4,45 +4,48 @@
     justify-content: center;
     margin-top: 20px;
     }
-    .container.div:not(.subtotal){
+.container.div:not(.subtotal){
         height: auto;
     }
-    .btn__container {
+ .btn__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 5px;
+        width: 10%;
     }
     
-    .btn {
+ .btn {
         padding: 5px 16px;
         font-weight: bold;
         cursor: pointer;
         background-color: #fff;
         border: none;
     }
-    .btn:hover svg {
+ .btn:hover svg {
         background-color: var(--primary-color);
     }
     
     
     
-    .cart__product{
+ .cart__product{
         display: flex;
-        gap: 10px;
+        gap: 100px;
+        width: 100%;
     }
-    .cart__container {
+  .cart__container {
     padding: 20px;
+    gap: 50px;
     }
-    .cart_container h2,
-    .cart_container h3 {
+  .cart_container h2,
+  .cart_container h3 {
     padding: 10px;
     }
-    .cart__container hr {
+  .cart__container hr {
     margin: 10px;
     }
-    .subtotal {
+  .subtotal {
         padding: 20px;
         min-width: 300px;
         height: 80%;
@@ -54,7 +57,7 @@
         background-color: rgb(242, 241, 241);
         border-radius: 5px;
         }
-        .subtotal a {
+       .subtotal a {
         text-align: center;
         width: 100%;
         border: none;
@@ -64,10 +67,10 @@
         text-decoration: none;
         color: black;
         }
-        .subtotal a:hover {
+    .subtotal a:hover {
         background: var(--primary-shade);}
         @media screen and (max-width: 968px) {
-            .container {
+         .container {
             flex-direction: column;
             order: 1;
             }}

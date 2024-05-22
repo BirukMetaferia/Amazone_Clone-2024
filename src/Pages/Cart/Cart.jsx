@@ -1,18 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Layout from '../../Components/Layout/Layout';
 import { DataContext } from '../../Components/DataProvider/DataProvider';
 import ProductCard from '../../Components/Product/ProductCard';
-import CurrencyFormat from 'react-currency-format'; // Import CurrencyFormat
-import { Link } from 'react-router-dom'; // Import Link
+import CurrencyFormat from 'react-currency-format';
+import { Link } from 'react-router-dom';
 import classes from './Cart.module.css';
 import { Type } from '../../Utility/action.type';
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
-
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function Cart() {
   const [{ basket }, dispatch] = useContext(DataContext);
   const total = basket.reduce((amount, item) => item.price * item.amount + amount, 0);
+  const [flex, setFlex] = useState(window.innerWidth > 768);
 
   const increment = (item) => {
     dispatch({
@@ -28,6 +27,15 @@ function Cart() {
     });
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setFlex(window.innerWidth > 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <Layout>
       <section className={classes.container}>
@@ -38,20 +46,19 @@ function Cart() {
           {basket?.length === 0 ? (
             <p>Oops! No item in your cart</p>
           ) : (
-            basket?.map((item, i) => {
+            basket?.map((item) => {
               return (
-                <section className={classes.cart__product} >
+                <section key={item.id} className={classes.cart__product}>
                   <ProductCard
-                    key={i}
                     product={item}
                     renderDesc={true}
                     renderAdd={false}
-                    flex={true}
+                    flex={flex}
                   />
                   <div className={classes.btn__container}>
                     <button className={classes.btn} onClick={() => increment(item)}><IoIosArrowUp size={20} /></button>
                     <span> {item.amount} </span>
-                    <button  className={classes.btn} onClick={() => decrement(item.id)}><IoIosArrowDown size={20}/> </button>
+                    <button className={classes.btn} onClick={() => decrement(item.id)}><IoIosArrowDown size={20}/> </button>
                   </div>
                 </section>
               );

@@ -1,6 +1,7 @@
+// Utility/firebase.js
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, collection, doc, setDoc, query, orderBy, onSnapshot } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC7ikfMEUK2aLcfPftJ60h7hYb7yW2u5rg",
@@ -13,5 +14,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// Export the required Firestore functions
+export { auth, db, collection, doc, setDoc, query, orderBy, onSnapshot };
