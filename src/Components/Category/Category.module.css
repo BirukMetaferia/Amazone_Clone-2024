@@ -1,56 +1,61 @@
-.category__container {
+.category__container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
   margin-top: -10%;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: #f0f0f0; 
 }
 
 .category {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #ffffff; /* White background for each category */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
-  border-radius: 4px; /* Rounded corners */
-  overflow: hidden; /* Ensures no overflow */
-  transition: transform 0.2s ease-in-out; /* Smooth transform effect for hover */
+  text-decoration: none !important;
+  background-color: #ffffff;  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  border-radius: 4px; 
+  overflow: hidden; 
+  transition: transform 0.2s ease-in-out; 
 }
 
 .category {
-  transform: translateY(-5px); /* Slight raise effect on hover */
+  transform: translateY(-5px); 
 }
 
 .category img {
   width: 100%;
-  height: 80%; /* Adjust height automatically */
-  object-fit: cover; /* Ensures the image covers the area well */
+  height: 80%; 
+  object-fit: cover; 
 }
 
-.category h2 {
-  margin: 10px 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.category link {
+.category .category-link {
   padding: 8px 16px;
-  
   color: #fff;
-  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
+  text-decoration-color: none;
   border-radius: 5px;
-  margin-bottom: 10px; /* Space at bottom inside the category box */
+  margin-bottom: 10px; 
   font-weight: bold;
 }
 
-.category link:hover {
-  background-color: #d2cfc0; /* Darker on hover */
+.category .category-link:hover {
+  background-color: #d2cfc0; 
 }
+
+.category h2 {
+  padding: 5px;
+  margin-left: 15px;
+  text-decoration-line: none;
+  text-decoration-style: none;
+  text-decoration-color: none;
+}
+
+
 .category {
-  position: relative; /* Set parent container to relative positioning */
+  position: relative; 
 }
 
 .category p {
@@ -60,8 +65,10 @@
   font-size: 12px;
   font-weight: bold;
   color: rgb(9, 132, 209);
-  position: absolute; /* Set p element to absolute positioning */
-  bottom: 10px; /* Move p element 10px above the parent container */
+  position: absolute; 
+  bottom: 10px; 
 }
 
-
+.noUnderline {
+  text-decoration: none; /* Remove underline from Link */
+}

@@ -8,9 +8,13 @@ function CategoryCard({ data }) {
   console.log(data);
   return (
     <div className={classes.category}>
-      <Link to={`/category/${data.name}`}>
+   
+      <Link to={`/category/${data.name}`} className={classes.noUnderline}>
         <span>
-          <h2>{data?.title}</h2>
+        <h2 style={{ textDecoration: 'none' }}>{data?.title}</h2>
+
+         
+
         </span>
         <img src={data?.imgLink} alt="" />
         <p>shop now</p>
